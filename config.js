@@ -131,9 +131,4 @@ module.exports = {
     CREATE_EMBED: "#068ADD",
     CLOSE_EMBED: "#068ADD",
   },
-
-  discord: {
-        id: process.env.DISCORD_ID,
-        prefix: '/',
-        footer: `© MythicX 2021 - ${new Date().getFullYear()}`,
 };
