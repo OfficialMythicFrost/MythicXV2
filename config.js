@@ -134,6 +134,6 @@ module.exports = {
 
   discord: {
         id: process.env.DISCORD_ID,
-        prefix: '!',
+        prefix: '/',
         footer: `© MythicX 2021 - ${new Date().getFullYear()}`,
 };
