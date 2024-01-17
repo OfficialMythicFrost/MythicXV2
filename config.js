@@ -19,9 +19,14 @@ module.exports = {
     WARNING: "#F7E919",
   },
   CACHE_SIZE: {
-    GUILDS: 150,
-    USERS: 20000,
-    MEMBERS: 50000,
+
+    // DO NOT TOUCH UNLESS YOU UNDERSTAND WHAT YOU ARE DOING
+    GUILDS: 100,
+    USERS: 10000,
+    MEMBERS: 10000,
+
+
+
   },
   MESSAGES: {
     API_ERROR: "Unexpected Backend Error! Try again later or contact support server",
@@ -30,7 +35,11 @@ module.exports = {
   // PLUGINS
 
   AUTOMOD: {
-    ENABLED: true,
+ 
+    ENABLED: true, // Should the automod system be enabled
+
+
+ 
     LOG_EMBED: "#36393F",
     DM_EMBED: "#36393F",
   },
@@ -40,6 +49,7 @@ module.exports = {
     baseURL: "https://mythicxv2.onrender.com", // base url
     failureURL: "https://mythicxv2.onrender.com", // failure redirect url
     port: "8080", // port to run the bot on
+    style: "dark", // color style for dashboard - light ~ dark // dashboard colors can be edited in dashboard/public/dist/css/custom.css
   },
 
   ECONOMY: {
@@ -54,10 +64,15 @@ module.exports = {
     ENABLED: true,
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
-    DEFAULT_SOURCE: "YT", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
+
+    DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
+
     // Add any number of lavalink nodes here
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
+
     LAVALINK_NODES: [
+      // Add any number of lavalink nodes here
+      // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
       {
         host: "lavalink.techpoint.world",
         port: 80,
@@ -69,8 +84,10 @@ module.exports = {
   },
 
   GIVEAWAYS: {
-    ENABLED: true,
-    REACTION: "🎁",
+
+    ENABLED: false, // Should the giveaway system be enabled
+    REACTION: "🎁", // Reaction the user must click to join giveaway
+
     START_EMBED: "#FF468A",
     END_EMBED: "#FF468A",
   },
@@ -85,7 +102,11 @@ module.exports = {
   },
 
   MODERATION: {
-    ENABLED: true,
+
+    ENABLED: true, // Should the moderation system be enabled
+
+
+
     EMBED_COLORS: {
       TIMEOUT: "#102027",
       UNTIMEOUT: "#4B636E",
@@ -99,7 +120,7 @@ module.exports = {
       UNDEAFEN: "#4B636E",
       DISCONNECT: "RANDOM",
       MOVE: "RANDOM",
-    },
+    }, // Different colors for different moderation actions
   },
 
   PRESENCE: {
@@ -110,9 +131,11 @@ module.exports = {
   },
 
   STATS: {
-    ENABLED: true,
+
+    ENABLED: true, // Should the stats system be enabled
+
     XP_COOLDOWN: 5, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**",
+    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**", // Level up message
   },
 
   SUGGESTIONS: {
@@ -127,7 +150,9 @@ module.exports = {
   },
 
   TICKET: {
-    ENABLED: true,
+
+    ENABLED: true, // Should the ticket system be enabled
+
     CREATE_EMBED: "#068ADD",
     CLOSE_EMBED: "#068ADD",
   },
