@@ -85,7 +85,7 @@ module.exports = {
 
   GIVEAWAYS: {
 
-    ENABLED: false, // Should the giveaway system be enabled
+    ENABLED: true, // Should the giveaway system be enabled
     REACTION: "🎁", // Reaction the user must click to join giveaway
 
     START_EMBED: "#FF468A",
